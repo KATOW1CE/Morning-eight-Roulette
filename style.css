@@ -168,7 +168,8 @@
     /* 调整轮盘容器 margin */
     .wheel-container {
       margin-bottom: 25px;
-      margin-left: 40px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* 调整结果区域样式 */
@@ -176,4 +177,11 @@
       margin-top: 25px;
       min-height: 30px;
       /* 确保结果区域有固定高度，避免跳动 */
+
+    }
+    @media (max-width: 360px) {
+      .wheel-container {
+        width: 240px;
+        height: 240px;
+      }
     }
